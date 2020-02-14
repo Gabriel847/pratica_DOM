@@ -1,3 +1,4 @@
+//----> Só ir fazendo a chamada de cada questão: questao 1 é q1, a segunda q2 ... e assim vai
 function q1(){
 //1ª
 	//A)
@@ -26,7 +27,6 @@ function q2(){
 			vet2[j] = j;
 		}
 	}
-
 	for (i = 0; i < quant; i++) {		
 		for (let j = 0; j < quant; j++) {
 			document.write("<label style='border: solid 1px black;'>"+vet[i]+"  "+vet2[j]+"</label>");
@@ -59,7 +59,7 @@ function q3(){
 	}
 	let labels = document.getElementsByClassName("diag1");
 	for (let i = 0; i < labels.length; i++) {
-	  labels[i].style="color: orange;border: solid 1px orange";
+		labels[i].style="color: orange;border: solid 1px orange";
 	}	
 }
 
@@ -73,7 +73,6 @@ function q4(){
 			vet2[j] = j;
 		}
 	}
-
 	for (i = 0; i < quant; i++) {		
 		for (j = 0; j < quant; j++) {
 			if((i+j) == quant-1){
@@ -86,12 +85,15 @@ function q4(){
 	}
 	let labels2 = document.getElementsByClassName("diag2");
 	for (let i = 0; i < labels2.length; i++) {
-	  labels2[i].style="color: orange;border: solid 1px orange";
+		labels2[i].style="color: orange;border: solid 1px orange";
 	}
 }
+
+
 //5ª
 //a)SIM, será null. Pois ao trazer seu último filho, a função tenta trzer seu último irmão, porém não existente pois na situação o elemento é filho único
 //b)SIM, será null. Como foi pego o primeiro elemento da lista e tenta se usar uma função previousSibling, que busca o anterior, acaba-se por ter um null pois não existe elem.children[-1]
+
 
 //6º Primeiramente não iria ser considerado uma função válida, já que o modo d e trabalhar com camadas é através de funções. Segundo que o jeito mais correto são com funções de coleta de tags filhas
 
